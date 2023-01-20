@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel ="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <audio src="img/music.mp4" autoplay loop></audio>
+    <!--This part represents the header of the page and where the navigation elements stays.-->
+    <header>
+        <nav id="nav">
+          <ul class="content navigation">
+            <li class="content"><a href="#project">Projects</a></li>
+            <li class="content"><a href="#experience">Experience</a></li>
+            <li class="content"><a href="#">TOP</a></li>
+            <li class="content"><a href="French.html">FR</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--This part represents the main part of the page where its going to be display in full it also 
+        contains the link to my github and the scrolling vertical about me.-->   
+        <main>
+          <section class="presentation">
+            <video src="img/video.mp4" muted autoplay loop alt="https://gabriwar.xyz/"></video>
+          <h1 class="content has"> <a class="has" href="https://github.com/hhhhhaaasss" target="_blank">Caio Castro</a></h1>
+          
+          <!--Typing Animation-->
+          <h1 class="content skills"><span id="typewritter"></span><span id="cursor">|</span></h1>
+            
+           <!--About me Animation--> 
+           <div class="marquee-container">
+            <!-- Need to have two divs with same content.
+            One div will translate completely out of parent and other div will fill the void till the transition for first div starts again. -->
+              <div class="marquee-text">
+                &nbsp;&nbsp;&nbsp;I Currently studying: Bachelor of Arts I Learning Javascript I Thanks for visiting I
+              </div>
+              <div class="marquee-text2">
+                &nbsp;&nbsp;&nbsp;I Currently studying: Bachelor of Arts I Learning Javascript I Thanks for visiting I
+              </div>
+            </div>
+          </section>
+
+      </main>
+    <!-- this part represents when the user scroll down for the first time to show my different projects that I have developed during the years,
+    it also contain my university projects that I have made in my bachelor of arts-->
+    <section id="project">
+      <div class="univ-all">
+        <h2 class="univ-h">University Projects</h2>
+        <div class="univ">
+          <p class="univ-text univ-text1">In my Second semester of my Bachelor of Arts I participated in a project about vulgarizing beer, in this project we had to make a communication strategy, an visual identity, a video that promotes our enterprise and a website that we added animations, to do that we used HTML, CSS, JS and PHP.</p>
+          <a target="_blank" href="https://jeannepacard.github.io/IsisFinale/index.html"><img  class="univ-img"src="img/IZIS.jpg" alt="Image of IZIS the Beer vulgarization project" /> </a>
+          
+          <p class="univ-text univ-text3">During my third semester, I also worked on a video editing project where we had to create animation using a 3D program and then edit using Animate, After Effect, and Premiere Pro. </p>
+          <a target="_blank" href="https://www.youtube.com/watch?v=AXBFgw_Ac6c"><img class="univ-img3" src="img/upec.png" alt="Image of the editing project" /></a>
+          
+          
+          <p class="univ-text univ-text2">In my Third semester of my Bachelor of Arts, I participated in a project about the infinity where we had to make research about abstract arts, create a virtual museum where we could show our group's artworks and the others, for that we had to make a communication strategy, a benchmark, a visual identity, an artwork (this artwork is a video about Errance) and a website coded in HTML/CSS/JS/PHP in French and English, we also had to make a copy of this website but in WordPress format.
+          </p>
+          <a target="_blank" href="https://errancesae.000webhostapp.com/index.php"><img class="univ-img2" src="img/logo_errance.png" alt="Logo of the Museum of the Infinity" /></a>
+        </div>
+      </div>
+      <div class="personal">
+        <h2 class="personal-h">Personal Projects</h2>
+            <p class="personal-text">Before starting with programming I did a lot of video editing so here is my link to my Youtube Channel.</p>
+            <a class="personal-text personal-anchor" target="_blank" href="https://www.youtube.com/@has2741">Link to my Youtube Channel</a>
+            <p class="personal-text2">The first Project I have created was a Calculator using HTML/CSS and vanilla Javascript</p>
+            <a class="personal-text personal-anchor2" target="_blank" href="https://github.com/hhhhhaaasss/Calculator-JS">Link to the calculator</a>
+
+        </div>
+    </section>
+    <!-- This part is going to be the footer of the page where the last elements come, which will be my working experience in domains other than computer science and arts-->
+      <h1 class="working-h">Working Experiences</h1>    
+    <section class="working working-section" id="experience">
+            <div class="working working1">
+                <a target="_blank" href="https://www.bricorama.fr"><img class ="working-img" src="img/Bricorama.png" alt="Bricorama logo" /></a>
+                <p class="working-text">Bricorama is a French enterprise that sells house goods, paintings, camping items, and much more.
+                  I have worked there in 2018 as an Internship, my mission there was:
+                  <ol>
+                    <li class="working-list">Customer Service</li>
+                    <li class="working-list">Stock Management</li>
+                    <li class="working-list">Installation of Goods</li>
+                  </ol>
+                </p>
+            </div>
+            <div class="working">
+                <a target="_blank" href="https://www.ubeeqo.com/fr-fr"><img class ="working-img2" src="img/ubeeqo.svg" alt="Ubeqoo logo" /></a>
+                <p class="working-text">Ubeeqo is an international company that rents cars, I have worked there as an Internship in 2018, My mission there was: 
+                  <ol class="working-ol">
+                    <li class="working-list">Installation of Vehicles</li>
+                    <li class="working-list">Maintenance of Vehicles</li>
+                    <li class="working-list">Customer Service</li>
+                  </ol>
+                </p>
+            </div>
+        </section>
+        <footer>
+        </footer>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

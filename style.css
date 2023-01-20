@@ -1,0 +1,640 @@
+/* Reset CSS / Global parameters  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #920000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header / Navigation Bar */
+
+#nav {
+  top: 0;
+  width: 100%;
+}
+
+#nav.fixed {
+  position: fixed;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 3vh;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  .navigation {
+    font-size: 3vh;
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navigation {
+    font-size: 4.5vh;
+    margin-left: 13rem;
+  }
+}
+
+/* Main */
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14rem;
+  height: 100vh;
+}
+
+video {
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  z-index: 1;
+}
+
+.has {
+  font-size: 8vh;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 320px) {
+  video {
+    width: 100%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+  }
+  .presentation {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  video {
+    width: 100%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+  }
+  .presentation {
+    margin-top: 12rem;
+  }
+}
+
+/* Skills Animation */
+
+.skills {
+  margin-top: -2.5vh;
+  margin-left: 2.5vh;
+}
+#typewritter {
+  margin-top: -1vh;
+  font-size: 4vh;
+}
+
+#cursor {
+  color: #920000;
+  animation: blink 0.5s linear infinite alternate;
+  font-size: 2rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* About Me Animation */
+.marquee-container {
+  margin-top: 16rem;
+  font-size: 3vh;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-text2 {
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .marquee-container {
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .marquee-container {
+    margin-top: 10rem;
+  }
+}
+/* Global Projects */
+
+.univ-h,
+.personal-h {
+  text-align: center;
+  font-size: 8vh;
+}
+
+/* Education */
+
+.univ {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 15rem;
+  padding: 3vh 5vh 25vh 15vh;
+  column-gap: 5vh;
+  row-gap: 25vh;
+}
+
+.univ-h {
+  padding-bottom: 10vh;
+}
+
+.univ-text {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.univ-text1 {
+  padding-top: 5vh;
+}
+
+.univ-text2 {
+  padding-top: 3vh;
+}
+
+.univ-img {
+  width: 25vw;
+  height: 35vh;
+  opacity: 0.4;
+  margin-left: 25vh;
+}
+
+.univ-text3 {
+  padding-top: 8vh;
+}
+.univ-img2 {
+  height: 35vh;
+  opacity: 0.4;
+  margin-left: 35vh;
+}
+
+.univ-img3 {
+  height: 30vh;
+  width: 60vh;
+  opacity: 0.4;
+  margin-left: 25vh;
+}
+.univ-img:hover,
+.univ-img2:hover,
+.univ-img3:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 320px) {
+  .univ {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 7rem;
+    font-size: 2vh;
+  }
+
+  .univ-h {
+    margin-bottom: -15vh;
+    font-size: 5vh;
+  }
+
+  .univ-text {
+    font-size: 3vh;
+    margin-left: -11vh;
+    inline-size: 45vh;
+  }
+  .univ-img {
+    margin-top: 5vh;
+    width: 80vw;
+    height: 35vh;
+    margin-left: -9vh;
+  }
+  .univ-img2 {
+    height: 35vh;
+    margin-left: -6vh;
+    margin-top: 20vh;
+  }
+  .univ-img3 {
+    height: 40vh;
+    width: 47vh;
+    margin-left: -12vh;
+    margin-top: -3vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .univ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 8rem;
+  }
+
+  .univ-h {
+    margin-bottom: 0vh;
+    font-size: 10vh;
+  }
+
+  .univ-text {
+    font-size: 3vh;
+    margin-left: 0vh;
+    font-size: 2.5vh;
+  }
+  .univ-img {
+    width: 40vw;
+    height: 35vh;
+    margin-left: 13vh;
+    margin-top: 1vh;
+  }
+  .univ-img2 {
+    height: 35vh;
+    margin-top: 5vh;
+    margin-left: 20vh;
+  }
+  .univ-img3 {
+    height: 35vh;
+    width: 50vh;
+    margin-left: 14vh;
+  }
+}
+
+/* Personal */
+
+.personal-h {
+  padding-bottom: 2vh;
+  margin-top: 20vh;
+}
+.personal-text {
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23vh;
+  margin-top: 15vh;
+}
+.personal-text2 {
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38vh;
+  margin-top: 15vh;
+}
+
+.personal-anchor {
+  margin-left: 87vh;
+}
+
+.personal-anchor2 {
+  margin-left: 92vh;
+}
+
+@media only screen and (max-width: 320px) {
+  .personal-h {
+    margin-top: 30vh;
+    font-size: 5vh;
+  }
+
+  .personal-text {
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-left: 3.5vh;
+    inline-size: 45vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .personal-text2 {
+    font-size: 3vh;
+    margin-left: 3vh;
+    inline-size: 45vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .personal-anchor {
+    margin-left: 9.5vh;
+  }
+
+  .personal-anchor2 {
+    margin-left: 13.5vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .personal-h {
+    margin-top: 30vh;
+    font-size: 10vh;
+  }
+
+  .personal-text {
+    font-size: 4vh;
+    margin-left: 2vh;
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .personal-text2 {
+    font-size: 4vh;
+    margin-left: 0vh;
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .personal-anchor {
+    margin-left: 40vh;
+  }
+
+  .personal-anchor2 {
+    margin-left: 46vh;
+  }
+}
+
+/* Personal Text/Anchor For French Variant  */
+.ptfr {
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20vh;
+  margin-top: 15vh;
+}
+
+.ptfr2 {
+  font-size: 4vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25vh;
+  margin-top: 15vh;
+}
+
+.pafr {
+  margin-left: 86vh;
+}
+
+.pafr2 {
+  margin-left: 91vh;
+}
+
+/* Working Experience */
+
+.working {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 3rem 9rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.working-h {
+  text-align: center;
+  font-size: 8vh;
+  margin-top: 40vh;
+}
+
+.working-section {
+  padding-left: 30vh;
+  padding-right: 30vh;
+}
+
+.working-text {
+  margin-top: 2vh;
+}
+
+.working-img {
+  height: 17vh;
+  opacity: 0.4;
+  padding-left: 12vh;
+}
+.working-img2 {
+  height: 15vh;
+  opacity: 0.4;
+  padding-left: 8vh;
+}
+
+.working-img:hover,
+.working-img2:hover {
+  opacity: 1;
+}
+
+.working-ol {
+  margin-top: 2vh;
+}
+
+.working-list {
+  list-style: inside;
+}
+
+@media only screen and (max-width: 320px) {
+  .working {
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-bottom: -5vh;
+  }
+  .working-h {
+    font-size: 5vh;
+    margin-top: 30vh;
+  }
+
+  .working-section {
+    padding-left: 0vh;
+    padding-right: 0vh;
+  }
+
+  .working-text {
+    inline-size: 49vh;
+  }
+
+  .working-img {
+    height: 15vh;
+    padding-left: 6vh;
+  }
+
+  .working-img2 {
+    height: 10vh;
+    padding-left: 5vh;
+  }
+
+  .working-ol {
+    margin-top: 2vh;
+  }
+
+  /* Exceptionally the French personal text is here due to priority on the css */
+
+  .phfr {
+    margin-top: 25vh;
+  }
+  .ptfr {
+    font-size: 3vh;
+    margin-left: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .pafr {
+    margin-left: 9vh;
+    font-size: 3vh;
+  }
+
+  .ptfr2 {
+    font-size: 3vh;
+    margin-left: 3vh;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+  }
+
+  .pafr2 {
+    margin-left: 12vh;
+    font-size: 3vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .working {
+    font-size: 3vh;
+  }
+
+  .working-img {
+    margin-left: 5vh;
+  }
+
+  .working-img2 {
+    margin-left: 0vh;
+  }
+
+  .phfr {
+    margin-top: 50vh;
+    font-size: 10vh;
+    padding-left: 12vh;
+  }
+
+  .ptfr {
+    font-size: 4vh;
+    margin-left: 2vh;
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .ptfr2 {
+    font-size: 3.8vh;
+    margin-left: 0vh;
+    margin-top: 15vh;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+
+  .pafr {
+    margin-left: 41vh;
+  }
+
+  .pafr2 {
+    margin-left: 44vh;
+  }
+}
+
+/* Working Experience Text For French Variant  */
+
+.wtfr {
+  margin-top: 1.8vh;
+}
+
+.wofr {
+  margin-top: 4vh;
+}
+
+@media only screen and (max-width: 320px) {
+  .wtfr {
+    margin-top: 1vh;
+    inline-size: 46vh;
+  }
+
+  .wofr {
+    margin-top: 2vh;
+  }
+}
+
+/* Footer */
+
+/*ALL CLASSES THAT END WITH FR MEANS IT IS FOR THE FRENCH VERSION OF THE WEBSITE*/
+
+/* TODO add smooth transition to the different sections*/
