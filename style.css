@@ -635,6 +635,10 @@ video {
 
 /* Footer */
 
+footer p {
+  margin-left: 92vh;
+}
+
 /*ALL CLASSES THAT END WITH FR MEANS IT IS FOR THE FRENCH VERSION OF THE WEBSITE*/
 
 /* TODO add smooth transition to the different sections*/
